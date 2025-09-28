@@ -1,0 +1,23 @@
+GET https://urqyvqhrg2.execute-api.ap-southeast-1.amazonaws.com/spaces
+###
+
+POST https://urqyvqhrg2.execute-api.ap-southeast-1.amazonaws.com/spaces
+Content-Type: application/json
+
+{
+  "space_location": "London"
+}
+###
+
+GET https://urqyvqhrg2.execute-api.ap-southeast-1.amazonaws.com/spaces?id=d32e23d7-d1cc-4793-9e19-3fc338addff1
+###
+
+PUT https://urqyvqhrg2.execute-api.ap-southeast-1.amazonaws.com/spaces?id=d32e23d7-d1cc-4793-9e19-3fc338addff1
+Content-Type: application/json
+
+{
+  "space_location": "New York"
+}
+###
+
+DELETE https://urqyvqhrg2.execute-api.ap-southeast-1.amazonaws.com/spaces?id=d32e23d7-d1cc-4793-9e19-3fc338addff1
