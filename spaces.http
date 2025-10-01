@@ -1,7 +1,13 @@
-GET https://urqyvqhrg2.execute-api.ap-southeast-1.amazonaws.com/spaces
+@url = https://zji1yjwvk7.execute-api.ap-southeast-1.amazonaws.com
+@id = 30d42679-2e65-495c-bb5a-9ff4c4fc39e9
+@token=eyJraWQiOiJtSmNUZXc0K2d4b3F0d2ZFcmNNbExCUFwveTR4R1wvdGJZT1ZTY09zTXcxRXM9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI3OWZhODU5Yy0zMDIxLTcwYWUtNDc2Mi0yNjNhY2E5NTBjZjUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfSDNtbEREU1JCIiwiY29nbml0bzp1c2VybmFtZSI6Ijc5ZmE4NTljLTMwMjEtNzBhZS00NzYyLTI2M2FjYTk1MGNmNSIsIm9yaWdpbl9qdGkiOiJmNWI3OTFjMi1hYzA3LTQ1ZmYtYmRlYS0zODdjODllN2Q3MDUiLCJhdWQiOiI2cDZhczlydDhxcTgwOHE5bzZ1cGRlaTQwNyIsImV2ZW50X2lkIjoiMmZkZDg2NGEtMGE2Yy00MjM1LThkMzQtNWIwMjkyMjFjMjVhIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3NTkxOTE0NzMsImV4cCI6MTc1OTE5NTA3MywiaWF0IjoxNzU5MTkxNDczLCJqdGkiOiI5Njc2OTI2Yi0xOWM2LTQzZTAtYmIzZS05YmMxMzBlMGNhMjYiLCJlbWFpbCI6Im1vcmFrb3QuaUBrYW9wYW53YS5jby50aCJ9.uwRe7rVDBqsVejmOhsMulAPpwabunR8j-OaSZL_HIuGJn-n8GnF4T_AFFM937si-XEtgZdC7o0hrYEotXEP8UFzmn7UihPD1dWekae2S2harAd3whs-jQP9j5DaxbGiGbji-qjzc2HOwndVSDEYhXDNiyz4mlU6zpw0Mw7aj_WOkJHsA92PNaA9rkhBV1BnxM2sDyuZTEJWT76Hg0f9S3x0Z9XExNz6fcBT4SzPT_gQrltxcFP7k0ObsZgD7viu4gpK-WAWyzTLHlrSWEL1GEf_OqzhjHjUsd3iU7Ob5MPQBWWRDl50M0dC0jKSZSTT1Hn0WnNm7HhhrmehoFJaF9w
+
+GET {{url}}/spaces
+Content-Type: application/json
+Authorization: Bearer {{token}}
 ###
 
-POST https://urqyvqhrg2.execute-api.ap-southeast-1.amazonaws.com/spaces
+POST {{url}}/spaces
 Content-Type: application/json
 
 {
@@ -9,10 +15,10 @@ Content-Type: application/json
 }
 ###
 
-GET https://urqyvqhrg2.execute-api.ap-southeast-1.amazonaws.com/spaces?id=d32e23d7-d1cc-4793-9e19-3fc338addff1
+GET {{url}}/spaces?id={{id}}
 ###
 
-PUT https://urqyvqhrg2.execute-api.ap-southeast-1.amazonaws.com/spaces?id=d32e23d7-d1cc-4793-9e19-3fc338addff1
+PUT {{url}}/spaces?id={{id}}
 Content-Type: application/json
 
 {
@@ -20,4 +26,4 @@ Content-Type: application/json
 }
 ###
 
-DELETE https://urqyvqhrg2.execute-api.ap-southeast-1.amazonaws.com/spaces?id=d32e23d7-d1cc-4793-9e19-3fc338addff1
+DELETE {{url}}/spaces?id={{id}}

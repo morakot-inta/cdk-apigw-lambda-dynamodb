@@ -4,6 +4,7 @@ import { GetSpaces } from './GetSpaces';
 import { UpdateSpace } from './UpdateSpace';
 import { DeleteSpaces } from './DeleteSpace';
 
+
 export const handler = async (event: APIGatewayProxyEventV2, context: Context): Promise<APIGatewayProxyResultV2> => {
 
   let message:string = 'undefined';

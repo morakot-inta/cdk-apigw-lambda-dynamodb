@@ -17,6 +17,11 @@ export class ApigwStack extends Stack {
     const api = new apigw.HttpApi(this, 'DemoHttpApi', {
       apiName: 'DemoHttpApi',
       description: 'HTTP API for demo purposes',
+      corsPreflight: {
+        allowOrigins: ['http://localhost:5500', 'http://127.0.0.1:5500'], // Update with your frontend URL
+        allowHeaders: ['Content-Type', 'X-Amz-Date', 'Authorization', 'X-Api-Key', 'X-Amz-Security-Token'],
+        allowMethods: [apigw.CorsHttpMethod.GET, apigw.CorsHttpMethod.POST, apigw.CorsHttpMethod.PUT, apigw.CorsHttpMethod.DELETE, apigw.CorsHttpMethod.OPTIONS],
+      }
     })
 
     api.addRoutes({
